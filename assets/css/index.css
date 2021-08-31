@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    top: 2em;
+    z-index: 1;
+}
+nav img{
+    height: 5em;
+}
+input#number{
+    width: 20em;
+    height: 3em;
+    border-radius: 15rem 0 0 15rem;
+    align-self: left;
+    border: none;
+}
+input#btn{
+    width: 7em;
+    position: absolute;
+    height: 3em;
+    border-radius: 15rem;
+    background: gold;
+    border: 0;
+    /* align-self: right; */
+    left: 80em;
+    cursor: pointer;
+}
+::placeholder{
+    text-align: center;
+    font-size: 1.5em;
+}
+input:focus-visible{
+    border: none;
+    /* outline: -webkit-focus-ring-color auto 1px; */
+    outline: 0px;
+    overflow: hidden;
+}
+form{
+    box-shadow: 0 0 5px black;
+    border-radius: 15rem;
+    z-index: 2;
+    height: fit-content;
+    justify-content: left;
+    display: flex;
+    align-content: left;
+}
+.green-container{
+    border-radius: 0% 32% 29% 10% / 0% 65% 33% 0%;
+    height: 100vh;
+    width: 60vw;
+    background: green;
+    z-index: 1;
+    position: absolute;
+
+}
+.yellow-container{
+    background: gold;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 65vw;
+    border-radius: 0% 32% 100% 10% / 0% 41% 67% 0%;
+}
+h1, p{
+    position: absolute;
+    z-index: 1;
+    color: white;
+}
+h1{
+    font-size: 3em;
+    position: absolute;
+    top: 5em;
+    width: 8em;
+    left: 4em;
+}
+p{
+    font-size: 1.5em;
+    position: absolute;
+    top: 20em;
+    width: 23em;
+    left: 8em;
+}
+.png img{
+    height: 27em;
+    position: absolute;
+    right: 10em;
+    top: 10em;
+}
